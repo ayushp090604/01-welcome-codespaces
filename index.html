@@ -1,22 +1,106 @@
-
 <!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>Student Welcome</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
-</head>
-<body>
-  <div class="container">
-    <h1>Welcome, Student!</h1>
-    <form id="nameForm">
-      <input type="text" id="studentName" placeholder="Enter your name" required>
-      <button type="submit">Continue</button>
-    </form>
-    <div id="greeting" class="hidden"></div>
-  </div>
-  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
-  <script src="script.js"></script>
-</body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ayush Patel's Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="brand">
+        <div class="profile-photo" aria-label="Profile photo placeholder"></div>
+        <div>
+          <h1>Ayush Patel</h1>
+          <p class="tagline">Web development student building strong portfolio projects</p>
+        </div>
+      </div>
+
+      <nav class="site-nav">
+        <a href="#home">Home</a>
+        <a href="#about">About Me</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home" class="hero section">
+        <div class="section-content">
+          <h2>Welcome to my portfolio</h2>
+          <p>
+            This site showcases the projects I am creating in my web development
+            college course.
+          </p>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <div class="section-content">
+          <h2>About Me</h2>
+          <p>
+            I am a student learning web development. I enjoy building clear,
+            responsive websites using simple HTML and CSS, and I am working on
+            projects that demonstrate my design and coding skills.
+          </p>
+        </div>
+      </section>
+
+      <section id="projects" class="section">
+        <div class="section-content">
+          <h2>Projects</h2>
+          <p>
+            Here is room to describe your portfolio projects. Add a new project
+            card for each website, app, or design you build.
+          </p>
+          <ul>
+            <li>Portfolio website</li>
+            <li>Responsive landing page</li>
+            <li>Interactive form or small app</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="skills" class="section">
+        <div class="section-content">
+          <h2>Skills</h2>
+          <div class="skills-grid">
+            <div class="skill-card">
+              <h3>HTML</h3>
+              <p>Structure and semantic content.</p>
+            </div>
+            <div class="skill-card">
+              <h3>CSS</h3>
+              <p>Layouts, styling, and responsive design.</p>
+            </div>
+            <div class="skill-card">
+              <h3>JavaScript</h3>
+              <p>Interactive features and dynamic pages.</p>
+            </div>
+            <div class="skill-card">
+              <h3>Design</h3>
+              <p>Simple, user-friendly interfaces.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact-section">
+        <div class="section-content">
+          <h2>Contact</h2>
+          <p>
+            Want to learn more? Reach out and I will share what I am working on.
+          </p>
+          <p>
+            Email: <a href="mailto:you@example.com">you@example.com</a>
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© 2026 My Portfolio</p>
+    </footer>
+  </body>
 </html>
